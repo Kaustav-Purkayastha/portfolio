@@ -1,0 +1,122 @@
+<!-- Projects Section -->
+<section class="projects section horizontal-scroll-enabled" id="projects">
+    <div class="container">
+        <div class="section-heading">
+            <h2>My Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="project-filters">
+            <button class="filter-button active" data-filter="all">All Projects</button>
+            <button class="filter-button" data-filter="de">Data Engineering</button>
+            <button class="filter-button" data-filter="ds">Data Analytics / Data Science</button>
+        </div>
+        <div class="scroll-arrow-container">
+           <button class="scroll-arrow prev-arrow" aria-label="Previous items">
+               <i class="fas fa-chevron-left"></i>
+           </button>
+           <button class="scroll-arrow next-arrow" aria-label="Next items">
+               <i class="fas fa-chevron-right"></i>
+           </button>
+       </div>
+        <div class="horizontal-scroll-wrapper">
+            <div class="scroll-content projects-grid">
+
+            <!-- Project 1: HealthPipe AI -->
+            <div class="project-card" data-category="de">
+                <div class="project-image">
+                    <img src="assets/projects/healthpipe_ai.jpeg" alt="HealthPipe AI">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">HealthPipe AI</h3>
+                    <p class="project-date"><i class="far fa-calendar-alt"></i> Mar 2026 - May 2026</p>
+                    <p class="project-description">Multi-agent pipeline that ingests healthcare data from public APIs, processes it through four AI agents, and loads clean output into DuckDB. Includes quality scorecards, auto-generated data dictionaries, and PySpark support for large-scale datasets.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">DuckDB</span>
+                        <span class="tech-tag">PySpark</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">Pytest</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaustav-Purkayastha/healthpipe_ai" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Insurance Risk Analysis -->
+            <div class="project-card" data-category="ds">
+                <div class="project-image">
+                    <img src="assets/projects/insurance_risk_analysis.jpeg" alt="Insurance Risk Predictor">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Insurance Risk Predictor</h3>
+                    <p class="project-date"><i class="far fa-calendar-alt"></i> Aug 2025 - Oct 2025</p>
+                    <p class="project-description">End-to-end ML pipeline for insurance claim prediction — ingests policyholder data into SQLite, performs EDA, and trains a Linear Regression model (R² = 0.784). Identified smoking status as the strongest cost driver.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Seaborn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaustav-Purkayastha/insurance_risk_predictor" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://drive.google.com/file/d/1dMDW0uSrizGTWgUMAKy89oulsvZsAP2V/view" class="project-link" target="_blank"><i class="fas fa-file-alt"></i> Report</a>
+                        <a href="https://docs.google.com/presentation/d/1ljNPWa-FhCitLud17ymIuIAaZe-gE9Fh/edit" class="project-link" target="_blank"><i class="fas fa-chalkboard-teacher"></i> Slides</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: TestNucleus -->
+            <div class="project-card" data-category="de">
+                <div class="project-image">
+                    <img src="assets/projects/testnucleus.jpeg" alt="TestNucleus">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">TestNucleus</h3>
+                    <p class="project-date"><i class="far fa-calendar-alt"></i> Jun 2025 - Aug 2025</p>
+                    <p class="project-description">Config-driven data quality framework that separates test definitions (YAML) from execution logic. Supports 20+ validation checks across completeness, uniqueness, and referential integrity — built for CI/CD and pipeline integration.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                        <span class="tech-tag">Pydantic</span>
+                        <span class="tech-tag">Pytest</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Snowflake</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaustav-Purkayastha/TestNucleus" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: GCC X CSD -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="assets/projects/gcc_x_csd.jpeg" alt="GCC X CSD">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">GCC X CSD</h3>
+                    <p class="project-date"><i class="far fa-calendar-alt"></i> Feb 2023 - May 2023</p>
+                    <p class="project-description">Full-stack department website for Gurucharan College CS with an alumni-student community platform, CMS-powered blog, and responsive UI. Built as a 3-member team project.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/gcc-x-csd/GCCxCSD" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://drive.google.com/file/d/102YKSjjD6YadWexNYwNfZzMrBw2Qqt6x/view" class="project-link" target="_blank"><i class="fas fa-file-alt"></i> Report</a>
+                        <a href="https://docs.google.com/presentation/d/104BLA-b0B4smOWfdXky84ZF58JgiJtYk/edit" class="project-link" target="_blank"><i class="fas fa-chalkboard-teacher"></i> Slides</a>
+                    </div>
+                </div>
+            </div>
+
+            </div> <!-- Closing scroll-content -->
+        </div> <!-- Closing horizontal-scroll-wrapper -->
+    </div>
+</section>
