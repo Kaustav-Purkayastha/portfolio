@@ -85,6 +85,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Close mobile nav when clicking dropdown menu items
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', () => {
+            if (navToggle && navMenu && navMenu.classList.contains('active')) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdowns.forEach(d => d.classList.remove('active'));
+                document.body.style.overflow = '';
+            }
+        });
+    });
     
     // Handle dropdown toggles
     if (dropdownToggles.length > 0) {
