@@ -1,0 +1,17 @@
+# LaTeX auxiliary files
+resume/*.aux
+resume/*.log
+resume/*.out
+resume/*.synctex.gz
+resume/*.fls
+resume/*.fdb_latexmk
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/

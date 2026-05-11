@@ -1,0 +1,126 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip}
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{8pt}{4pt}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolor}{HTML}{371e77}
+\hypersetup{colorlinks=true, urlcolor=linkcolor}
+\color[HTML]{110223}
+
+%for social icons
+\usepackage{fontawesome5}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}
+
+% Reduce parskip to avoid big gaps
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Kaustav Purkayastha} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{\faEnvelope} kaustavpurk2@gmail.com $|$ {\faMobile} +91-9365872396} \\[3pt]
+\textcolor[HTML]{371e77}{\href{https://github.com/Kaustav-Purkayastha}{\uline{{\raisebox{-0.05\height}{\faGithub}} GitHub}} $|$
+\href{https://linkedin.com/in/kaustav-02}{\uline{{\raisebox{-0.05\height}{\faLinkedin}} LinkedIn}} $|$
+\href{https://Kaustav-Purkayastha.github.io/portfolio/}{\uline{{\raisebox{-0.05\height}{\faGlobe}} Portfolio}}}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages \& Data:} Python, SQL, PySpark, PL/SQL, Shell Scripting, ETL/ELT, CDC, SCD Type-2, Data Warehousing, Data Quality\\[3pt]
+\color[HTML]{1C033C}\textbf{Cloud \& Platforms:} AWS (Redshift, S3, Glue, EC2, Aurora), Snowflake, Databricks, dbt, Informatica IDMC, PostgreSQL, Oracle\\[3pt]
+\color[HTML]{1C033C}\textbf{Tools \& DevOps:} Stonebranch, Apache Airflow, Git/GitHub, Docker, Tableau Prep, Amazon Bedrock, Anthropic Claude
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Deloitte Consulting, Hyderabad}} \hfill \color[HTML]{371e77} Oct 2023 -- Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Data Engineer -- AI \& Data Practice}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Architected a \textbf{centralized data platform} for a Fortune 500 insurance client's Retail Annuities LOB, engineering \textbf{70+ Spark-based ETL jobs} in Informatica IDMC and loading \textbf{60+ Redshift tables} with 25+ years of historical data using \textbf{ELT, CDC, SCD Type-2}, and snapshot ingestion patterns.
+        \item Migrated \textbf{4+ legacy Tableau Prep workflows} into scalable \textbf{Redshift ELT pipelines}, consolidating multiple RDBMS sources and external datasets, and re-engineered complex Python-based annuity calculations into \textbf{optimized SQL}, achieving \textbf{\textasciitilde98\% data accuracy} against legacy extracts.
+        \item Reverse-engineered \textbf{500+ legacy source tables} and authored \textbf{100+ Source-to-Target Mapping (STTM)} documents, resolving schema conflicts and mapping ambiguities to unify Annuity and Life data models into a \textbf{single integrated warehouse}.
+        \item Designed \textbf{50+ parameterized Redshift views} and reusable configuration parameter sets, reducing pipeline configuration overhead across \textbf{30+ jobs} and enabling \textbf{self-service analytics} for downstream business and reporting teams.
+        \item Integrated \textbf{Anthropic Claude with Amazon Bedrock} into the development workflow, accelerating pipeline development by \textbf{\textasciitilde50\%}, reducing compute costs, and establishing patterns for \textbf{AI-assisted code generation} within the data engineering lifecycle.
+        \item Orchestrated end-to-end data ingestion and transformation across \textbf{AWS Glue, Redshift, S3, EC2, Aurora}, and \textbf{Stonebranch}, while owning patching cycles, \textbf{metadata lineage documentation}, QA handoffs, and complex \textbf{business rule interpretation}.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% Personal Projects
+\section{Personal Projects}
+
+\begin{tabularx}{\linewidth}{ @{}X r@{} }
+\textbf{HealthPipe AI} {\small\textit{\color[HTML]{371e77}\href{https://github.com/Kaustav-Purkayastha/healthpipe_ai}{\raisebox{-0.05\height}{\faGithub}\ \uline{View Source Code}}}} & \color[HTML]{371e77} Mar 2026 -- May 2026 \\
+\end{tabularx}\par\vspace{2pt}
+Multi-agent pipeline that ingests \textbf{healthcare data from public APIs}, processes it through \textbf{four AI agents}, and loads clean output into \textbf{DuckDB}. Includes \textbf{quality scorecards}, auto-generated \textbf{data dictionaries}, and \textbf{PySpark} support for large-scale datasets.\\[2pt]
+\textit{Python, DuckDB, PySpark, Ollama, Pytest, GitHub Actions}
+
+\vspace{8pt}
+
+\begin{tabularx}{\linewidth}{ @{}X r@{} }
+\textbf{TestNucleus} {\small\textit{\color[HTML]{371e77}\href{https://github.com/Kaustav-Purkayastha/TestNucleus}{\raisebox{-0.05\height}{\faGithub}\ \uline{View Source Code}}}} & \color[HTML]{371e77} Jun 2025 -- Aug 2025 \\
+\end{tabularx}\par\vspace{2pt}
+Config-driven \textbf{data quality framework} that separates test definitions (\textbf{YAML}) from execution logic. Supports \textbf{20+ validation checks} across completeness, uniqueness, and referential integrity --- built for \textbf{CI/CD and pipeline integration}.\\[2pt]
+\textit{Python, SQLAlchemy, Pydantic, Pytest}
+
+% Education
+\section{Education}
+\textbf{Lovely Professional University (LPU)} \hfill \color[HTML]{371e77} 2024 -- 2026 \color[HTML]{110223}\\
+\color[HTML]{371e77} Master of Computer Applications (MCA), Data Science \& Finance \hfill \color[HTML]{4B28A4} {\small \textit{CGPA: 7.48}} \color[HTML]{110223}
+
+\vspace{4pt}
+
+\textbf{Assam University, Silchar} \hfill \color[HTML]{371e77} 2020 -- 2023 \color[HTML]{110223}\\
+\color[HTML]{371e77} Bachelor of Science (Hons.), Computer Science \hfill \color[HTML]{4B28A4} {\small \textit{CGPA: 8.86}} \color[HTML]{110223}
+
+% Certifications & Recognition
+\section{Certifications \& Recognition}
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=3pt]
+        \item \textbf{Certifications:} \href{https://achieve.snowflake.com/c2358c1b-4da5-4c9a-94c7-e9806cbb3edd}{\uline{Snowflake SnowPro Core}} (2026), \href{https://credentials.databricks.com/64cd3b85-77ab-4c9f-91ba-168c92d27739}{\uline{Databricks Certified Data Engineer Associate}} (2025), \href{https://verify.skilljar.com/c/re9tde64j9ui}{\uline{Claude with Amazon Bedrock}} (2026), \href{https://www.credly.com/badges/3668cded-264d-4834-8851-eb2cc87358d3}{\uline{Industry Proficiency: Financial Services}} (2025), \href{https://drive.google.com/file/d/1xK0TLpdXRCAxnX8DlwNyQrvbyeU8dWXC/view}{\uline{IDMC Associate}} (2024)
+        \vspace{3pt}
+        \item \textbf{Recognition:} Outstanding Performance Award (Feb 2026, May 2025) $|$ Applause Award (Jul 2024) $|$ FY24 Rising Stars (May 2024) $|$ Institutional Merit Scholarship (Dec 2024)
+    \end{itemize}
+\end{minipage}
+
+\end{document}
