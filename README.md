@@ -16,6 +16,7 @@ A modern, responsive portfolio website with an integrated LaTeX resume builder. 
 - **Project Showcase**: Filterable project gallery with timelines
 - **Certifications & Education**: Professional and academic credentials
 - **Sticky Skills Legend**: Always visible skill proficiency levels while scrolling
+- **Google Analytics**: GA4 tracking for visitor insights and traffic analysis
 - **Contact Info**: Direct links to email, LinkedIn, GitHub, YouTube, and blog
 
 ---
