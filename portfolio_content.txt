@@ -135,13 +135,13 @@ EDUCATION
 ---------
 Section heading: Education
 
-1. Master of Computer Applications (MCA), Data Science & Finance
+1. Master of Computer Applications - MCA, Data Science & Finance
    Lovely Professional University (LPU)
    2024 - 2026
    Completed MCA via LPU Online (UGC-entitled) with specialization in Data Science & Finance. Capstone project on insurance risk analysis and claim prediction using Python, SQL, and machine learning. CGPA: 7.48
    Highlights: Data Warehousing & Mining, Big Data, Cloud Computing, Python, Machine Learning, Advanced Data Visualization, Probability & Statistics, Corporate Finance, Security Analysis & Portfolio Management
 
-2. Bachelor of Science (Hons.), Computer Science
+2. Bachelor of Science - BSc (Hons), Computer Science
    Gurucharan College, Silchar (Affiliated to Assam University)
    2020 - 2023
    Graduated with 1st Class 2nd Rank in Computer Science. Co-founded GC CS Students' Club (GCSC). Led a final-semester group web project recognized as one of the best in the batch. CGPA: 8.86
