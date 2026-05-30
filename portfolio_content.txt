@@ -52,19 +52,19 @@ Data Engineer
 Deloitte USI (Deloitte Consulting India Pvt. Ltd.)
 Oct 2023 - Present | Hyderabad, India
 
-- Architected a centralized data platform for a Fortune 500 insurance client's Retail Annuities LOB, engineering 70+ Spark-based ETL jobs in Informatica IDMC and loading 60+ Redshift tables with 25+ years of historical data using ELT, CDC, SCD Type-2, and snapshot ingestion patterns.
+- Engineered the Retail Annuities cloud data platform for a Fortune 500 insurer to replace a legacy on-prem reporting warehouse, building 70+ ETL jobs in Informatica IDMC that integrate multiple enterprise source systems (SQL Server, mainframe, and valuation) and load 35+ years of history into 60+ Redshift tables using CDC and SCD logic.
 
-- Migrated 4+ legacy Tableau Prep workflows into scalable Redshift ELT pipelines by consolidating multiple RDBMS sources and external CSV datasets, and re-engineered complex Python-based annuity vector and survivorship calculations into optimized SQL, achieving ~98% data accuracy against legacy extracts while eliminating desktop-based data prep dependencies.
+- Designed historical-load logic to integrate multi-grain history (yearly, monthly, and point-in-time snapshots) into the Redshift data model, performing deep source analysis to derive record effective dates from a complex source of main and archive tables while preserving natural keys and audit integrity.
 
-- Reverse-engineered 500+ legacy source tables and authored 100+ Source-to-Target Mapping (STTM) documents, resolving schema conflicts, master data inconsistencies, and mapping ambiguities to unify Annuity and Life data models into a single integrated warehouse.
+- Migrated 4+ legacy Tableau Prep workflows into scalable Redshift ELT pipelines using pushdown optimization, consolidating multiple RDBMS, external, and file (CSV) sources and re-engineering complex Python annuity calculations into optimized SQL, then validating outputs to ~98% accuracy against legacy business extracts.
 
-- Designed 50+ parameterized Redshift views and reusable configuration parameter sets, reducing pipeline configuration overhead across 30+ jobs and enabling self-service analytics for downstream business and reporting teams.
+- Migrated interdependent Dremio views to Redshift materialized views under tight deadlines, analyzing and untangling deep hierarchical dependencies and performing full data reconciliation to confirm parity with source.
 
-- Integrated Anthropic Claude with Amazon Bedrock into the development workflow, accelerating pipeline development by ~50%, reducing compute costs, and establishing patterns for AI-assisted code generation and optimization within the data engineering lifecycle.
+- Designed a reusable, configurable looping framework in Informatica IDMC that ingests variable-count daily mainframe feeds file-by-file, applying SCD sequentially within a single run to preserve correct change history when multiple files arrive on the same day, scheduled via Stonebranch.
 
-- Orchestrated end-to-end data ingestion and transformation across AWS Glue (raw layer), Redshift (transformation layer), S3 (file triggers and staging), EC2 (parameter management), Aurora (audit and configuration), and Stonebranch (job scheduling), while owning patching cycles, metadata lineage documentation, QA handoffs, and complex business rule interpretation.
+- Applied Redshift ELT pushdown optimization to re-engineer compute-intensive IICS ETL processing into post-SQL executed directly on Redshift, removing IICS compute and reducing runtime, using Claude via Amazon Bedrock to accelerate the conversion.
 
-Tech Stack: SQL, PySpark, Python, AWS Redshift, S3, Glue, EC2, Aurora, Informatica IDMC, Tableau Prep, Stonebranch, Amazon Bedrock, Anthropic Claude
+Tech Stack: SQL, PySpark, Python, AWS Redshift, S3, Glue, EC2, Aurora, Informatica IDMC/IICS, Dremio, MS SQL Server, Tableau Prep, Stonebranch, Amazon Bedrock, Anthropic Claude
 
 
 PROJECTS

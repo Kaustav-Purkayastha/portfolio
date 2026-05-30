@@ -17,9 +17,9 @@ Portfolio: https://Kaustav-Purkayastha.github.io/portfolio/
 
 SKILLS
 ------
-Languages & Data: Python, SQL, PySpark, PL/SQL, Shell Scripting, ETL/ELT, CDC, SCD Type-2, Data Warehousing, Data Quality
-Cloud & Platforms: AWS (Redshift, S3, Glue, EC2, Aurora), Snowflake, Databricks, dbt, Informatica IDMC, PostgreSQL, Oracle
-Tools & DevOps: Stonebranch, Apache Airflow, Git/GitHub, Docker, Tableau Prep, Amazon Bedrock, Anthropic Claude
+Languages & Data: SQL, PL/SQL, Redshift SQL, Shell Scripting, Python, PySpark; ETL/ELT, CDC, SCD Type-1 & Type-2, Pushdown Optimization, Data Warehousing, Data Modeling, Data Quality & Validation
+Cloud & Platforms: AWS (Redshift, S3, Glue, EC2, Aurora), Databricks, Snowflake, dbt, Informatica IDMC/IICS, MS SQL Server, PostgreSQL, Oracle
+Tools & DevOps: Stonebranch, Git/GitHub, GitHub Actions, Jenkins, Liquibase, Docker, Jira (Agile/Scrum), Apache Airflow, Amazon Bedrock
 
 
 WORK EXPERIENCE
@@ -29,17 +29,17 @@ Period: Oct 2023 - Present
 Role: Data Engineer - AI & Data Practice
 
 Bullets:
-1. Architected a centralized data platform for a Fortune 500 insurance client's Retail Annuities LOB, engineering 70+ Spark-based ETL jobs in Informatica IDMC and loading 60+ Redshift tables with 25+ years of historical data using ELT, CDC, SCD Type-2, and snapshot ingestion patterns.
+1. Engineered the Retail Annuities cloud data platform for a Fortune 500 insurer to replace a legacy on-prem reporting warehouse, building 70+ ETL jobs in Informatica IDMC that integrate multiple enterprise source systems (SQL Server, mainframe, and valuation) and load 35+ years of history into 60+ Redshift tables using CDC and SCD logic.
 
-2. Migrated 4+ legacy Tableau Prep workflows into scalable Redshift ELT pipelines, consolidating multiple RDBMS sources and external datasets, and re-engineered complex Python-based annuity calculations into optimized SQL, achieving ~98% data accuracy against legacy extracts.
+2. Designed historical-load logic to integrate multi-grain history (yearly, monthly, and point-in-time snapshots) into the Redshift data model, performing deep source analysis to derive record effective dates from a complex source of main and archive tables while preserving natural keys and audit integrity.
 
-3. Reverse-engineered 500+ legacy source tables and authored 100+ Source-to-Target Mapping (STTM) documents, resolving schema conflicts and mapping ambiguities to unify Annuity and Life data models into a single integrated warehouse.
+3. Migrated 4+ legacy Tableau Prep workflows into scalable Redshift ELT pipelines using pushdown optimization, consolidating multiple RDBMS, external, and file (CSV) sources and re-engineering complex Python annuity calculations into optimized SQL, then validating outputs to ~98% accuracy against legacy business extracts.
 
-4. Designed 50+ parameterized Redshift views and reusable configuration parameter sets, reducing pipeline configuration overhead across 30+ jobs and enabling self-service analytics for downstream business and reporting teams.
+4. Migrated interdependent Dremio views to Redshift materialized views under tight deadlines, analyzing and untangling deep hierarchical dependencies and performing full data reconciliation to confirm parity with source.
 
-5. Integrated Anthropic Claude with Amazon Bedrock into the development workflow, accelerating pipeline development by ~50%, reducing compute costs, and establishing patterns for AI-assisted code generation within the data engineering lifecycle.
+5. Designed a reusable, configurable looping framework in Informatica IDMC that ingests variable-count daily mainframe feeds file-by-file, applying SCD sequentially within a single run to preserve correct change history when multiple files arrive on the same day, scheduled via Stonebranch.
 
-6. Orchestrated end-to-end data ingestion and transformation across AWS Glue, Redshift, S3, EC2, Aurora, and Stonebranch, while owning patching cycles, metadata lineage documentation, QA handoffs, and complex business rule interpretation.
+6. Applied Redshift ELT pushdown optimization to re-engineer compute-intensive IICS ETL processing into post-SQL executed directly on Redshift, removing IICS compute and reducing runtime, using Claude via Amazon Bedrock to accelerate the conversion.
 
 
 PERSONAL PROJECTS
@@ -47,7 +47,7 @@ PERSONAL PROJECTS
 1. HealthPipe AI
    Period: Mar 2026 - May 2026
    GitHub: https://github.com/Kaustav-Purkayastha/healthpipe_ai
-   Description: Multi-agent pipeline that ingests healthcare data from public APIs, processes it through four AI agents, and loads clean output into DuckDB. Includes quality scorecards, auto-generated data dictionaries, and PySpark support for large-scale datasets.
+   Description: Multi-agent pipeline that ingests healthcare data from public APIs, processes it through four AI agents powered by local LLMs, and loads clean output into DuckDB. Includes quality scorecards, auto-generated data dictionaries, and PySpark support for large-scale datasets.
    Tech: Python, DuckDB, PySpark, Ollama, Pytest, GitHub Actions
 
 2. TestNucleus
@@ -59,13 +59,13 @@ PERSONAL PROJECTS
 
 EDUCATION
 ---------
-1. Lovely Professional University (LPU)
-   Degree: Master of Computer Applications (MCA), Data Science & Finance
+1. Lovely Professional University
+   Degree: Master of Computer Applications, Data Science & Finance
    Period: 2024 - 2026
    CGPA: 7.48
 
-2. Assam University, Silchar
-   Degree: Bachelor of Science (Hons.), Computer Science
+2. Assam University
+   Degree: Bachelor of Science with Honours, Computer Science
    Period: 2020 - 2023
    CGPA: 8.86
 

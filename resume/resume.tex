@@ -65,9 +65,9 @@
 \end{tabularx}
 
 \section{Skills}
-\color[HTML]{1C033C}\textbf{Languages \& Data:} Python, SQL, PySpark, PL/SQL, Shell Scripting, ETL/ELT, CDC, SCD Type-2, Data Warehousing, Data Quality\\[3pt]
-\color[HTML]{1C033C}\textbf{Cloud \& Platforms:} AWS (Redshift, S3, Glue, EC2, Aurora), Snowflake, Databricks, dbt, Informatica IDMC, PostgreSQL, Oracle\\[3pt]
-\color[HTML]{1C033C}\textbf{Tools \& DevOps:} Stonebranch, Apache Airflow, Git/GitHub, Docker, Tableau Prep, Amazon Bedrock, Anthropic Claude
+\color[HTML]{1C033C}\textbf{Languages \& Data:} SQL, PL/SQL, Redshift SQL, Shell Scripting, Python, PySpark; ETL/ELT, CDC, SCD Type-1 \& Type-2, Pushdown Optimization, Data Warehousing, Data Modeling, Data Quality \& Validation\\[3pt]
+\color[HTML]{1C033C}\textbf{Cloud \& Platforms:} AWS (Redshift, S3, Glue, EC2, Aurora), Databricks, Snowflake, dbt, Informatica IDMC/IICS, MS SQL Server, PostgreSQL, Oracle\\[3pt]
+\color[HTML]{1C033C}\textbf{Tools \& DevOps:} Stonebranch, Git/GitHub, GitHub Actions, Jenkins, Liquibase, Docker, Jira (Agile/Scrum), Apache Airflow, Amazon Bedrock
 
 %Experience
 \section{Work Experience}
@@ -76,12 +76,12 @@
 \color[HTML]{371e77}\textbf{\textit{Data Engineer -- AI \& Data Practice}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
-        \item Architected a \textbf{centralized data platform} for a Fortune 500 insurance client's Retail Annuities LOB, engineering \textbf{70+ Spark-based ETL jobs} in Informatica IDMC and loading \textbf{60+ Redshift tables} with 25+ years of historical data using \textbf{ELT, CDC, SCD Type-2}, and snapshot ingestion patterns.
-        \item Migrated \textbf{4+ legacy Tableau Prep workflows} into scalable \textbf{Redshift ELT pipelines}, consolidating multiple RDBMS sources and external datasets, and re-engineered complex Python-based annuity calculations into \textbf{optimized SQL}, achieving \textbf{\textasciitilde98\% data accuracy} against legacy extracts.
-        \item Reverse-engineered \textbf{500+ legacy source tables} and authored \textbf{100+ Source-to-Target Mapping (STTM)} documents, resolving schema conflicts and mapping ambiguities to unify Annuity and Life data models into a \textbf{single integrated warehouse}.
-        \item Designed \textbf{50+ parameterized Redshift views} and reusable configuration parameter sets, reducing pipeline configuration overhead across \textbf{30+ jobs} and enabling \textbf{self-service analytics} for downstream business and reporting teams.
-        \item Integrated \textbf{Anthropic Claude with Amazon Bedrock} into the development workflow, accelerating pipeline development by \textbf{\textasciitilde50\%}, reducing compute costs, and establishing patterns for \textbf{AI-assisted code generation} within the data engineering lifecycle.
-        \item Orchestrated end-to-end data ingestion and transformation across \textbf{AWS Glue, Redshift, S3, EC2, Aurora}, and \textbf{Stonebranch}, while owning patching cycles, \textbf{metadata lineage documentation}, QA handoffs, and complex \textbf{business rule interpretation}.
+        \item Engineered the Retail Annuities cloud data platform for a Fortune 500 insurer to replace a legacy on-prem reporting warehouse, building \textbf{70+ ETL jobs} in \textbf{Informatica IDMC} that integrate multiple enterprise source systems (SQL Server, mainframe, and valuation) and load 35+ years of history into \textbf{60+ Redshift tables} using \textbf{CDC and SCD logic}.
+        \item Designed historical-load logic to integrate \textbf{multi-grain history} (yearly, monthly, and point-in-time snapshots) into the \textbf{Redshift data model}, performing deep source analysis to derive record effective dates from a complex source of main and archive tables while preserving natural keys and audit integrity.
+        \item Migrated 4+ legacy Tableau Prep workflows into scalable \textbf{Redshift ELT pipelines} using \textbf{pushdown optimization}, consolidating multiple RDBMS, external, and file (CSV) sources and re-engineering complex Python annuity calculations into optimized SQL, then validating outputs to \textbf{\textasciitilde98\% accuracy} against legacy business extracts.
+        \item Migrated interdependent \textbf{Dremio views to Redshift materialized views} under tight deadlines, analyzing and untangling deep hierarchical dependencies and performing full \textbf{data reconciliation} to confirm parity with source.
+        \item Designed a reusable, configurable looping framework in \textbf{Informatica IDMC} that ingests variable-count daily mainframe feeds file-by-file, applying \textbf{SCD} sequentially within a single run to preserve correct change history when multiple files arrive on the same day, scheduled via \textbf{Stonebranch}.
+        \item Applied \textbf{Redshift ELT pushdown optimization} to re-engineer compute-intensive IICS ETL processing into \textbf{post-SQL} executed directly on Redshift, removing IICS compute and reducing runtime, using Claude via Amazon Bedrock to accelerate the conversion.
     \end{itemize}
 \end{minipage}
 \end{tabularx}
@@ -92,7 +92,7 @@
 \begin{tabularx}{\linewidth}{ @{}X r@{} }
 \textbf{HealthPipe AI} {\small\textit{\color[HTML]{371e77}\href{https://github.com/Kaustav-Purkayastha/healthpipe_ai}{\raisebox{-0.05\height}{\faGithub}\ \uline{View Source Code}}}} & \color[HTML]{371e77} Mar 2026 -- May 2026 \\
 \end{tabularx}\par\vspace{2pt}
-Multi-agent pipeline that ingests \textbf{healthcare data from public APIs}, processes it through \textbf{four AI agents}, and loads clean output into \textbf{DuckDB}. Includes \textbf{quality scorecards}, auto-generated \textbf{data dictionaries}, and \textbf{PySpark} support for large-scale datasets.\\[2pt]
+Multi-agent pipeline that ingests \textbf{healthcare data from public APIs}, processes it through \textbf{four AI agents} powered by local LLMs, and loads clean output into \textbf{DuckDB}. Includes \textbf{quality scorecards}, auto-generated \textbf{data dictionaries}, and \textbf{PySpark} support for large-scale datasets.\\[2pt]
 \textit{Python, DuckDB, PySpark, Ollama, Pytest, GitHub Actions}
 
 \vspace{8pt}
@@ -105,13 +105,13 @@ Config-driven \textbf{data quality framework} that separates test definitions (\
 
 % Education
 \section{Education}
-\textbf{Lovely Professional University (LPU)} \hfill \color[HTML]{371e77} 2024 -- 2026 \color[HTML]{110223}\\
-\color[HTML]{371e77} Master of Computer Applications (MCA), Data Science \& Finance \hfill \color[HTML]{4B28A4} {\small \textit{CGPA: 7.48}} \color[HTML]{110223}
+\textbf{Lovely Professional University} \hfill \color[HTML]{371e77} 2024 -- 2026 \color[HTML]{110223}\\
+\color[HTML]{371e77} Master of Computer Applications, Data Science \& Finance \hfill \color[HTML]{4B28A4} {\small \textit{CGPA: 7.48}} \color[HTML]{110223}
 
 \vspace{4pt}
 
-\textbf{Assam University, Silchar} \hfill \color[HTML]{371e77} 2020 -- 2023 \color[HTML]{110223}\\
-\color[HTML]{371e77} Bachelor of Science (Hons.), Computer Science \hfill \color[HTML]{4B28A4} {\small \textit{CGPA: 8.86}} \color[HTML]{110223}
+\textbf{Assam University} \hfill \color[HTML]{371e77} 2020 -- 2023 \color[HTML]{110223}\\
+\color[HTML]{371e77} Bachelor of Science with Honours, Computer Science \hfill \color[HTML]{4B28A4} {\small \textit{CGPA: 8.86}} \color[HTML]{110223}
 
 % Certifications & Recognition
 \section{Certifications \& Recognition}
