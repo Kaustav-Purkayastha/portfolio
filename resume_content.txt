@@ -26,7 +26,7 @@ WORK EXPERIENCE
 ---------------
 Company: Deloitte Consulting, Kolkata
 Period: Oct 2023 - Present
-Role: Data Engineer - AI & Data Offering
+Role: Data Engineer - AI & Data Practice
 
 Bullets:
 1. Engineered the Retail Annuities cloud data platform for a Fortune 500 insurer to replace a legacy on-prem reporting warehouse, building 70+ ETL jobs in Informatica IDMC that integrate multiple enterprise source systems (SQL Server, mainframe, and valuation) and load 35+ years of history into 60+ Redshift tables using CDC and SCD logic.
