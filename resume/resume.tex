@@ -65,8 +65,8 @@
 \end{tabularx}
 
 \section{Skills}
-\color[HTML]{1C033C}\textbf{Languages \& Data:} SQL, PL/SQL, Redshift SQL, Shell Scripting, Python, PySpark; ETL/ELT, CDC, SCD Type-1 \& Type-2, Pushdown Optimization, Data Warehousing, Data Modeling, Data Quality \& Validation\\[3pt]
-\color[HTML]{1C033C}\textbf{Cloud \& Platforms:} AWS (Redshift, S3, Glue, EC2, Aurora), Databricks, Snowflake, dbt, Informatica IDMC/IICS, MS SQL Server, PostgreSQL, Oracle\\[3pt]
+\color[HTML]{1C033C}\textbf{Languages \& Data:} SQL, PL/SQL, Redshift SQL, Shell Scripting, Python, PySpark; ETL/ELT, CDC, SCD Type-1 \& Type-2, Pushdown Optimization, Data Warehousing, Data Quality \& Validation, Source-to-Target Reconciliation\\[3pt]
+\color[HTML]{1C033C}\textbf{Cloud \& Platforms:} AWS (Redshift, S3, Glue, EC2, Aurora), Databricks, Delta Lake, Snowflake, dbt, Informatica IDMC/IICS, MS SQL Server, PostgreSQL, Oracle\\[3pt]
 \color[HTML]{1C033C}\textbf{Tools \& DevOps:} Stonebranch, Git/GitHub, GitHub Actions, Jenkins, Liquibase, Docker, Jira (Agile/Scrum), Apache Airflow, Amazon Bedrock
 
 %Experience
@@ -76,12 +76,13 @@
 \color[HTML]{371e77}\textbf{\textit{Data Engineer -- AI \& Data Practice}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
-        \item Engineered the Retail Annuities cloud data platform for a Fortune 500 insurer to replace a legacy on-prem reporting warehouse, building \textbf{70+ ETL jobs} in \textbf{Informatica IDMC} that integrate multiple enterprise source systems (SQL Server, mainframe, and valuation) and load 35+ years of history into \textbf{60+ Redshift tables} using \textbf{CDC and SCD logic}.
-        \item Designed historical-load logic to integrate \textbf{multi-grain history} (yearly, monthly, and point-in-time snapshots) into the \textbf{Redshift data model}, performing deep source analysis to derive record effective dates from a complex source of main and archive tables while preserving natural keys and audit integrity.
-        \item Migrated 4+ legacy Tableau Prep workflows into scalable \textbf{Redshift ELT pipelines} using \textbf{pushdown optimization}, consolidating multiple RDBMS, external, and file (CSV) sources and re-engineering complex Python annuity calculations into optimized SQL, then validating outputs to \textbf{\textasciitilde98\% accuracy} against legacy business extracts.
-        \item Migrated interdependent \textbf{Dremio views to Redshift materialized views} under tight deadlines, analyzing and untangling deep hierarchical dependencies and performing full \textbf{data reconciliation} to confirm parity with source.
-        \item Designed a reusable, configurable looping framework in \textbf{Informatica IDMC} that ingests variable-count daily mainframe feeds file-by-file, applying \textbf{SCD} sequentially within a single run to preserve correct change history when multiple files arrive on the same day, scheduled via \textbf{Stonebranch}.
-        \item Applied \textbf{Redshift ELT pushdown optimization} to re-engineer compute-intensive IICS ETL processing into \textbf{post-SQL} executed directly on Redshift, removing IICS compute and reducing runtime, using Claude via Amazon Bedrock to accelerate the conversion.
+        \item Building \textbf{gold-layer (mart) dimensional models} on \textbf{Delta Lake} as part of a live migration from the legacy Redshift warehouse to a \textbf{Databricks medallion lakehouse}, sourcing curated data from the lake and using \textbf{dbt} ref/source dependencies to structure the transformation DAG.
+        \item Converting legacy \textbf{IICS ETL jobs} into \textbf{dbt ELT models} against the lakehouse, using an \textbf{AI-assisted conversion}, debugging, and reconciliation framework to validate parity between legacy and re-platformed outputs.
+        \item Architected \textbf{70+ Informatica IDMC ETL pipelines} to retire a legacy on-prem reporting warehouse for a Fortune 500 insurer, integrating enterprise sources (SQL Server, mainframe, valuation systems) and loading 35+ years of history into \textbf{60+ Amazon Redshift tables} using \textbf{CDC-based ingestion} and \textbf{SCD Type 1/Type 2} load logic.
+        \item Enabled accurate point-in-time and historical reporting by designing \textbf{multi-grain historization logic} (yearly, monthly, and point-in-time snapshots) for the Redshift dimensional model, reverse-engineering record effective dates from an undocumented main-and-archive source while preserving natural keys and audit integrity.
+        \item Consolidated 4+ legacy Tableau Prep workflows into scalable \textbf{Redshift ELT pipelines} validated to \textbf{\textasciitilde98\% accuracy} against legacy business extracts, by unifying multiple RDBMS, external, and flat-file (CSV) sources and re-engineering Python annuity calculations into optimized \textbf{set-based SQL}.
+        \item Eliminated a Dremio dependency by migrating interdependent \textbf{semantic views to Redshift materialized views}, resolving hierarchical dependencies and performing \textbf{source-to-target reconciliation} to confirm data parity.
+        \item Built a \textbf{metadata-driven looping framework} in Informatica IDMC for sequential SCD-preserving mainframe file ingestion via \textbf{Stonebranch}, and converted compute-intensive IICS jobs into \textbf{Redshift ELT pushdown} (post-SQL in-warehouse), accelerating conversion using Claude via \textbf{Amazon Bedrock}.
     \end{itemize}
 \end{minipage}
 \end{tabularx}
@@ -92,7 +93,7 @@
 \begin{tabularx}{\linewidth}{ @{}X r@{} }
 \textbf{HealthPipe AI} {\small\textit{\color[HTML]{371e77}\href{https://github.com/Kaustav-Purkayastha/healthpipe_ai}{\raisebox{-0.05\height}{\faGithub}\ \uline{View Source Code}}}} & \color[HTML]{371e77} Mar 2026 -- May 2026 \\
 \end{tabularx}\par\vspace{2pt}
-Multi-agent pipeline that ingests \textbf{healthcare data from public APIs}, processes it through \textbf{four AI agents} powered by local LLMs, and loads clean output into \textbf{DuckDB}. Includes \textbf{quality scorecards}, auto-generated \textbf{data dictionaries}, and \textbf{PySpark} support for large-scale datasets.\\[2pt]
+Multi-agent pipeline that ingests \textbf{healthcare data from public APIs}, processes it through \textbf{four AI agents} powered by local LLMs, and loads clean output into \textbf{DuckDB}. Includes \textbf{quality scorecards}, auto-generated \textbf{data dictionaries}, and \textbf{PySpark} support for large-scale datasets; built as part of Deloitte's Accelerate with AI --- In-person Engineering Lab Session.\\[2pt]
 \textit{Python, DuckDB, PySpark, Ollama, Pytest, GitHub Actions}
 
 \vspace{8pt}

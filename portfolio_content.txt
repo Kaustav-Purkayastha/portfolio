@@ -23,15 +23,15 @@ ABOUT
 Section heading: About Me
 Subheading: My Journey
 
-I am a Data Engineer with 3+ years of experience architecting and delivering enterprise-grade data platforms in the Financial Services domain. Currently at Deloitte USI, I design large-scale ETL/ELT pipelines, data warehouses, and analytics-ready data models for Fortune 500 insurance clients, working across the full data lifecycle from source ingestion through regulatory reporting and downstream consumption.
+I am a Data Engineer with 3+ years of experience architecting and delivering enterprise-grade data platforms in the Financial Services domain. Currently at Deloitte USI, I work across both a large-scale cloud data platform (Amazon Redshift) and an active migration to a Databricks medallion lakehouse — designing ETL/ELT pipelines, dimensional models, and dbt-based transformations for Fortune 500 insurance clients across the full data lifecycle, from source ingestion through regulatory reporting and downstream consumption.
 
-I hold a Master of Computer Applications (Data Science & Finance) from Lovely Professional University and a Bachelor of Science (Hons.) in Computer Science from Gurucharan College, Silchar (Affiliated to Assam University). My technical depth spans SQL, Python, PySpark, AWS (Redshift, S3, Glue), Snowflake, Databricks, dbt, and Informatica IDMC, with applied knowledge in data modeling, SCD/CDC patterns, data quality frameworks, and business analytics.
+I hold a Master of Computer Applications (Data Science & Finance) from Lovely Professional University and a Bachelor of Science (Hons.) in Computer Science from Gurucharan College, Silchar (Affiliated to Assam University). My technical depth spans SQL, Python, PySpark, AWS (Redshift, S3, Glue), Databricks, Delta Lake, dbt, Snowflake, and Informatica IDMC, with applied knowledge in data modeling, SCD/CDC patterns, source-to-target reconciliation, data quality frameworks, and business analytics.
 
-I am driven by the challenge of converting complex business logic into clean, scalable, production-grade data systems. I actively explore AI-enabled engineering workflows using Amazon Bedrock and Anthropic Claude, and am focused on contributing to modern data platforms that deliver measurable business impact.
+I am driven by the challenge of converting complex business logic into clean, scalable, production-grade data systems — whether re-platforming legacy ETL to modern ELT or building AI-assisted conversion and reconciliation frameworks. I actively explore AI-enabled engineering workflows using Amazon Bedrock and Anthropic Claude, and am focused on contributing to modern data platforms that deliver measurable business impact.
 
 Detail Cards:
 - Data Engineering: 3+ years building enterprise ETL/ELT pipelines and data warehouses
-- Cloud & Data Platforms: AWS Redshift, S3, Glue; Snowflake; Databricks; dbt
+- Cloud & Data Platforms: AWS Redshift, S3, Glue; Databricks, Delta Lake; dbt; Snowflake; Informatica IDMC
 - Python, PySpark & SQL: End-to-end data processing, transformation, and analytics
 - Data Modeling & Business Analytics: SCD, CDC, data quality, regulatory reporting, BI enablement
 
@@ -52,19 +52,21 @@ Data Engineer
 Deloitte USI (Deloitte Consulting India Pvt. Ltd.)
 Oct 2023 - Present | Hyderabad, India
 
-- Engineered the Retail Annuities cloud data platform for a Fortune 500 insurer to replace a legacy on-prem reporting warehouse, building 70+ ETL jobs in Informatica IDMC that integrate multiple enterprise source systems (SQL Server, mainframe, and valuation) and load 35+ years of history into 60+ Redshift tables using CDC and SCD logic.
+- Building gold-layer (mart) dimensional models on Delta Lake as part of a live migration from the legacy Redshift warehouse to a Databricks medallion lakehouse, sourcing curated data from the lake and using dbt ref/source dependencies to structure the transformation DAG.
 
-- Designed historical-load logic to integrate multi-grain history (yearly, monthly, and point-in-time snapshots) into the Redshift data model, performing deep source analysis to derive record effective dates from a complex source of main and archive tables while preserving natural keys and audit integrity.
+- Converting legacy IICS ETL jobs into dbt ELT models against the lakehouse, using an AI-assisted conversion, debugging, and reconciliation framework to validate parity between legacy and re-platformed outputs.
 
-- Migrated 4+ legacy Tableau Prep workflows into scalable Redshift ELT pipelines using pushdown optimization, consolidating multiple RDBMS, external, and file (CSV) sources and re-engineering complex Python annuity calculations into optimized SQL, then validating outputs to ~98% accuracy against legacy business extracts.
+- Architected 70+ Informatica IDMC ETL pipelines to retire a legacy on-prem reporting warehouse for a Fortune 500 insurer, integrating enterprise sources (SQL Server, mainframe, valuation systems) and loading 35+ years of history into 60+ Amazon Redshift tables using CDC-based ingestion and SCD Type 1/Type 2 load logic.
 
-- Migrated interdependent Dremio views to Redshift materialized views under tight deadlines, analyzing and untangling deep hierarchical dependencies and performing full data reconciliation to confirm parity with source.
+- Enabled accurate point-in-time and historical reporting by designing multi-grain historization logic (yearly, monthly, and point-in-time snapshots) for the Redshift dimensional model, reverse-engineering record effective dates from an undocumented main-and-archive source while preserving natural keys and audit integrity.
 
-- Designed a reusable, configurable looping framework in Informatica IDMC that ingests variable-count daily mainframe feeds file-by-file, applying SCD sequentially within a single run to preserve correct change history when multiple files arrive on the same day, scheduled via Stonebranch.
+- Consolidated 4+ legacy Tableau Prep workflows into scalable Redshift ELT pipelines validated to ~98% accuracy against legacy business extracts, by unifying multiple RDBMS, external, and flat-file (CSV) sources and re-engineering Python annuity calculations into optimized set-based SQL.
 
-- Applied Redshift ELT pushdown optimization to re-engineer compute-intensive IICS ETL processing into post-SQL executed directly on Redshift, removing IICS compute and reducing runtime, using Claude via Amazon Bedrock to accelerate the conversion.
+- Eliminated a Dremio dependency by migrating interdependent semantic views to Redshift materialized views, resolving hierarchical dependencies and performing source-to-target reconciliation to confirm data parity.
 
-Tech Stack: SQL, PySpark, Python, AWS Redshift, S3, Glue, EC2, Aurora, Informatica IDMC/IICS, Dremio, MS SQL Server, Tableau Prep, Stonebranch, Amazon Bedrock, Anthropic Claude
+- Built a metadata-driven looping framework in Informatica IDMC for sequential SCD-preserving mainframe file ingestion via Stonebranch, and converted compute-intensive IICS jobs into Redshift ELT pushdown (post-SQL in-warehouse), accelerating conversion using Claude via Amazon Bedrock.
+
+Tech Stack: SQL, Python, PySpark, Databricks, Delta Lake, dbt, AWS Redshift, S3, Glue, EC2, Aurora, Informatica IDMC/IICS, MS SQL Server, Dremio, Tableau Prep, Stonebranch, Amazon Bedrock, Anthropic Claude
 
 
 PROJECTS
