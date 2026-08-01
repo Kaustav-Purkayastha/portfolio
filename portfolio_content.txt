@@ -77,9 +77,9 @@ Filters: All Projects, Data Engineering, Data Analytics / Data Science
 1. HealthPipe AI
    Category: Data Engineering
    Date: Mar 2026 - May 2026
-   Description: Multi-agent pipeline that ingests healthcare data from public APIs, processes it through four AI agents, and loads clean output into DuckDB. Includes quality scorecards, auto-generated data dictionaries, and PySpark support for large-scale datasets.
-   Tech: Python, DuckDB, PySpark, Ollama, Pytest, GitHub Actions
-   Links: Source Code (GitHub)
+   Description: Flask workbench that onboards healthcare datasets through a four-agent pipeline, surfacing quality scorecards, AI-generated data dictionaries, NL→SQL querying, and a prebuilt US States Health Mart; on-device Gemma 3 4B, optional Gemini Flash. Built as part of Deloitte's Accelerate with AI — In-person Engineering Lab Session.
+   Tech: Python, Flask, DuckDB, pandas, Ollama, Gemini Flash, Pytest, GitHub Actions
+   Links: Source Code (GitHub), View Demo (YouTube: https://www.youtube.com/watch?v=hUgf_1fDD_4)
 
 2. Insurance Risk Predictor
    Category: Data Analytics / Data Science

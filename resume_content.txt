@@ -49,8 +49,9 @@ PERSONAL PROJECTS
 1. HealthPipe AI
    Period: Mar 2026 - May 2026
    GitHub: https://github.com/Kaustav-Purkayastha/healthpipe_ai
-   Description: Multi-agent pipeline that ingests healthcare data from public APIs, processes it through four AI agents powered by local LLMs, and loads clean output into DuckDB. Includes quality scorecards, auto-generated data dictionaries, and PySpark support for large-scale datasets; built as part of Deloitte's Accelerate with AI — In-person Engineering Lab Session.
-   Tech: Python, DuckDB, PySpark, Ollama, Pytest, GitHub Actions
+   Demo: https://www.youtube.com/watch?v=hUgf_1fDD_4
+   Description: Flask workbench that onboards healthcare datasets through a four-agent pipeline, surfacing quality scorecards, AI-generated data dictionaries, NL→SQL querying, and a prebuilt US States Health Mart; on-device Gemma 3 4B, optional Gemini Flash. Built as part of Deloitte's Accelerate with AI — In-person Engineering Lab Session.
+   Tech: Python, Flask, DuckDB, pandas, Ollama, Pytest, GitHub Actions
 
 2. TestNucleus
    Period: Jun 2025 - Aug 2025
