@@ -81,8 +81,8 @@ CERTIFICATIONS
 2. Databricks Certified Data Engineer Associate (2025)
    Verify: https://credentials.databricks.com/64cd3b85-77ab-4c9f-91ba-168c92d27739
 
-3. Claude with Amazon Bedrock (2026)
-   Verify: https://verify.skilljar.com/c/re9tde64j9ui
+3. Claude Certified Associate - Foundations (2026)
+   Verify: https://www.credly.com/badges/c0856f6e-cd57-44e0-9e6c-249e6f24c2fb/public_url
 
 4. Industry Proficiency: Financial Services (2025)
    Verify: https://www.credly.com/badges/3668cded-264d-4834-8851-eb2cc87358d3

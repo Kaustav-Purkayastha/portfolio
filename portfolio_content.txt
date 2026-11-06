@@ -107,27 +107,32 @@ CERTIFICATIONS
 --------------
 Section heading: Certifications
 
-1. Snowflake SnowPro Core
+1. Claude Certified Associate - Foundations
+   Issuer: Anthropic
+   Date: September 2026 | Expires September 2027
+   Description: Validates foundational knowledge of working with Claude, including effective prompting, tool use, and building AI-enabled workflows.
+
+2. Snowflake SnowPro Core
    Issuer: Snowflake
    Date: April 2026 | Expires May 2028
    Description: Validates core knowledge of Snowflake's cloud data platform, architecture, and data engineering capabilities.
 
-2. Claude with Amazon Bedrock
+3. Claude with Amazon Bedrock
    Issuer: Anthropic
    Date: February 2026
    Description: Covers integration and usage of Anthropic Claude models via Amazon Bedrock for AI-enabled workflows.
 
-3. Databricks Certified Data Engineer Associate
+4. Databricks Certified Data Engineer Associate
    Issuer: Databricks
    Date: June 2025 | Expires June 2027
    Description: Validates skills in data engineering using Databricks, Apache Spark, Delta Lake, and lakehouse architecture.
 
-4. Industry Proficiency Foundation: Financial Services
+5. Industry Proficiency Foundation: Financial Services
    Issuer: Deloitte
    Date: March 2025
    Description: Validates foundational proficiency in financial services industry knowledge, including insurance, banking, and capital markets.
 
-5. Intelligent Data Management Cloud (IDMC) Associate
+6. Intelligent Data Management Cloud (IDMC) Associate
    Issuer: Informatica
    Date: February 2024
    Description: Validates proficiency in Informatica IDMC platform for cloud data integration, quality, and governance.
