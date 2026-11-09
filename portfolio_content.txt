@@ -162,9 +162,9 @@ Section heading: Achievements
 Featured:
 
 1. Outstanding Performance Award
-   Deloitte U.S. Firms | Feb 2026
-   Awarded the Outstanding Performance Award at Deloitte for the second time under the Thank it Forward initiative, recognizing sustained high-impact delivery for a market-leading US insurance client in the Retail Annuities space. Acknowledged for building and optimizing scalable ETL pipelines and data marts, resolving complex cross-system data issues, and ensuring high data quality through strong validation and modeling practices.
-   Tags: Outstanding Performance, ETL & Data Modeling, Data Quality
+   Deloitte USI | Oct 2026
+   Awarded the Outstanding Performance Award (USI) at Deloitte for the third time, recognizing impressive ownership in independently handling the entire Annuities work thread. Acknowledged for remarkable proactiveness and thoroughness, consistently delivering on time while ensuring no critical issues arise, under the award reason "Collaborate for measurable impact."
+   Tags: Outstanding Performance, Ownership, Dependable Delivery
 
 2. Institutional Merit Scholarship Award
    Gurucharan College, Silchar (Affiliated to Assam University) | Dec 2024
@@ -173,23 +173,27 @@ Featured:
 
 Other Notable Accomplishments:
 
-3. Mr. Dependable — USI S&A Newsletter Feature
+3. Outstanding Performance Award
+   Deloitte U.S. Firms | Feb 2026
+   Awarded for the second time under the Thank it Forward initiative, recognizing sustained high-impact delivery for a market-leading US insurance client in the Retail Annuities space. Acknowledged for building and optimizing scalable ETL pipelines and data marts, resolving complex cross-system data issues, and ensuring high data quality through strong validation and modeling practices.
+
+4. Mr. Dependable — USI S&A Newsletter Feature
    Deloitte USI Consulting S&A | Jun 2025
    Featured as "Mr. Dependable" in the USI Strategy & Analytics R&R Newsletter (May 2025 Edition) for consistently reliable performance, ownership mindset, and positive team impact during a high-visibility engagement for a top-tier insurance client.
 
-4. Outstanding Performance Award
+5. Outstanding Performance Award
    Deloitte U.S. Firms | May 2025
    Awarded under Deloitte's Thank it Forward initiative for exceptional work in Q1 PY2025. Recognized for building complex, metadata-driven ETL pipelines, implementing advanced logic and validations, and conducting detailed data gap analysis across multiple systems.
 
-5. Applause Award
+6. Applause Award
    Deloitte USI Consulting S&A | Jul 2024
    Awarded for exceptional performance, demonstrating dedication, flexibility, and a willingness to go the extra mile. Recognized for valuable contributions and the full value brought every day to Deloitte.
 
-6. FY24 Hires: Rising Stars Newsletter Feature
+7. FY24 Hires: Rising Stars Newsletter Feature
    Deloitte USI S&A Immerse | May 2024
    Nominated by the Team Lead to be featured as "FY24 Hires: Rising Stars" for remarkable dedication, teamwork, and determination to client work.
 
-7. Anundoram Borooah Award, 2018
+8. Anundoram Borooah Award, 2018
    Govt. of Assam, India | Feb 2019
    Awarded in recognition of excellent academic performance in securing Distinction (85%+) in the HSLC Examination, 2018 conducted by Board of Secondary Education, Assam.
 
